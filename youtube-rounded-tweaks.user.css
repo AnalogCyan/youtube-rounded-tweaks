@@ -1,0 +1,240 @@
+/* ==UserStyle==
+@name           YouTube Rounded Tweaks
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Some tweaks for the "Youtube Rounded" theme.
+@author         AnalogCyan
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+  #container.ytd-masthead,
+  #chips.ytd-feed-filter-chip-bar-renderer,
+  #contentWrapper.tp-yt-iron-dropdown > *,
+  .ytp-larger-tap-buttons .ytp-ad-preview-container,
+  .ytp-larger-tap-buttons .ytp-ad-skip-button-container,
+  .ytp-ad-skip-button,
+  button.yt-icon-button {
+    border-radius: 10px;
+  }
+
+  #container.ytd-masthead,
+  #chips.ytd-feed-filter-chip-bar-renderer,
+  #contentWrapper.tp-yt-iron-dropdown > *,
+  .ytp-larger-tap-buttons .ytp-ad-preview-container,
+  .ytp-larger-tap-buttons .ytp-ad-skip-button-container,
+  .ytp-ad-skip-button,
+  button.yt-icon-button {
+    backdrop-filter: none;
+  }
+
+  yt-interaction.circular .fill.yt-interaction,
+  yt-interaction.circular .stroke.yt-interaction {
+    border-radius: 10px;
+  }
+
+  ytd-rich-grid-media[three-dot-rework] ytd-menu-renderer.ytd-rich-grid-media {
+    right: -10px;
+  }
+
+  #container.ytd-masthead {
+    background-color: #212121 !important;
+  }
+
+  #contentWrapper,
+  #masthead,
+  #masthead-container + * #contentContainer,
+  paper-listbox,
+  paper-dialog {
+    backdrop-filter: none;
+  }
+
+  ytd-playlist-panel-renderer[js-panel-height]
+    #container.ytd-playlist-panel-renderer,
+  #playlist.ytd-watch-flexy:not([js-panel-height_]).ytd-watch-flexy:not([disable-upgrade]).ytd-watch-flexy,
+  ytd-playlist-sidebar-primary-info-renderer[responsive]
+    ytd-playlist-thumbnail.ytd-playlist-sidebar-primary-info-renderer:before,
+  ytd-voice-search-dialog-renderer[dialog],
+  ytd-playlist-panel-renderer[collapsible] .header.ytd-playlist-panel-renderer,
+  ytd-watch-flexy[flexy][js-panel-height_]
+    #chat.ytd-watch-flexy:not([collapsed]).ytd-watch-flexy,
+  ytd-watch-flexy[flexy][js-panel-height_]
+    #chat-container.ytd-watch-flexy:not([chat-collapsed]).ytd-watch-flexy,
+  #chat.ytd-watch-flexy,
+  #donation-shelf.ytd-watch-flexy ytd-donation-shelf-renderer.ytd-watch-flexy,
+  #donation-shelf.ytd-watch-flexy
+    ytd-donation-unavailable-renderer.ytd-watch-flexy,
+  #playlist.ytd-watch-flexy,
+  #panels.ytd-watch-flexy
+    ytd-engagement-panel-section-list-renderer.ytd-watch-flexy,
+  ytd-playlist-panel-video-renderer[watch-color-update][can-reorder]:hover.dragging,
+  ytd-playlist-panel-video-renderer[watch-color-update][can-reorder].dragging,
+  ytd-playlist-panel-video-renderer[watch-color-update]:hover:not(.dragging),
+  #show-hide-button.ytd-live-chat-frame
+    > ytd-toggle-button-renderer.ytd-live-chat-frame,
+  ytd-playlist-panel-video-renderer[selected][watch-color-update],
+  ytd-menu-renderer:not([condensed])
+    .ytd-menu-renderer[button-renderer]
+    + .ytd-menu-renderer[button-renderer],
+  .ytd-menu-renderer[button-renderer]
+    + template.ytd-menu-renderer
+    + #button.ytd-menu-renderer,
+  #top-level-buttons-computed.ytd-menu-renderer:not(:empty)
+    + #button.ytd-menu-renderer,
+  paper-ripple {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+
+  yt-live-chat-message-input-renderer {
+    background-color: transparent !important;
+    border-top-color: #303030;
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+
+  #input-panel.yt-live-chat-renderer::after {
+    height: 0px !important;
+  }
+
+  iframe.ytd-live-chat-frame {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: all 0.3s ease;
+  }
+
+  #voice-search-button.ytd-masthead {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  ytd-thumbnail-overlay-side-panel-renderer {
+    border-radius: 9px;
+    transition: all 0.3s ease;
+  }
+
+  ytd-thumbnail-overlay-resume-playback-renderer {
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  yt-live-chat-item-list-renderer[allow-scroll]
+    #item-scroller.yt-live-chat-item-list-renderer::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+  }
+
+  yt-live-chat-banner-manager.yt-live-chat-item-list-renderer {
+    right: 0 !important;
+  }
+
+  html,
+  ytd-message-renderer.ytd-live-chat-frame,
+  #show-hide-button.ytd-live-chat-frame,
+  #contentWrapper,
+  #masthead,
+  #masthead-container + * #contentContainer,
+  paper-listbox,
+  paper-dialog,
+  ytd-playlist-panel-renderer[js-panel-height]
+    #container.ytd-playlist-panel-renderer,
+  #playlist.ytd-watch-flexy:not([js-panel-height_]).ytd-watch-flexy:not([disable-upgrade]).ytd-watch-flexy,
+  ytd-playlist-sidebar-primary-info-renderer[responsive]
+    ytd-playlist-thumbnail.ytd-playlist-sidebar-primary-info-renderer:before,
+  ytd-voice-search-dialog-renderer[dialog],
+  ytd-playlist-panel-renderer[collapsible] .header.ytd-playlist-panel-renderer,
+  ytd-watch-flexy[flexy][js-panel-height_]
+    #chat.ytd-watch-flexy:not([collapsed]).ytd-watch-flexy,
+  ytd-watch-flexy[flexy][js-panel-height_]
+    #chat-container.ytd-watch-flexy:not([chat-collapsed]).ytd-watch-flexy,
+  #chat.ytd-watch-flexy,
+  #donation-shelf.ytd-watch-flexy ytd-donation-shelf-renderer.ytd-watch-flexy,
+  #donation-shelf.ytd-watch-flexy
+    ytd-donation-unavailable-renderer.ytd-watch-flexy,
+  #playlist.ytd-watch-flexy,
+  #panels.ytd-watch-flexy
+    ytd-engagement-panel-section-list-renderer.ytd-watch-flexy,
+  ytd-playlist-panel-video-renderer[watch-color-update][can-reorder]:hover.dragging,
+  ytd-playlist-panel-video-renderer[watch-color-update][can-reorder].dragging,
+  ytd-playlist-panel-video-renderer[watch-color-update]:hover:not(.dragging),
+  #show-hide-button.ytd-live-chat-frame
+    > ytd-toggle-button-renderer.ytd-live-chat-frame,
+  ytd-playlist-panel-renderer[standardized-themed-scrollbar]
+    .playlist-items.ytd-playlist-panel-renderer {
+    overflow-y: overlay !important;
+    overflow-x: hidden !important;
+  }
+
+  ytd-statement-banner-renderer #dismissed.ytd-statement-banner-renderer {
+    display: none !important;
+  }
+
+  *::-webkit-scrollbar {
+    display: block !important;
+    width: 12px !important;
+    color: transparent !important;
+    background-color: transparent !important;
+  }
+
+  body::-webkit-scrollbar-button {
+    height: 60px !important;
+    color: transparent !important;
+    background-color: transparent !important;
+  }
+
+  *::-webkit-scrollbar-track {
+    display: none !important;
+  }
+
+  *::-webkit-scrollbar-track-piece {
+    display: none !important;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 24px !important;
+  }
+
+  /* Hide part of Return YouTube Dislike that clashes with Compact YouTube Buttons */
+  .ryd-tooltip-bar-container {
+    display: none;
+  }
+}
+
+/* Safari additions */
+#player.ytd-watch-flexy {
+  padding-top: 20px !important;
+}
+
+.video-stream.html5-main-video {
+  border-radius: 10px !important;
+}
+
+#progress {
+  border-radius: 10px !important;
+}
+
+ytd-thumbnail-overlay-resume-playback-renderer {
+  border-radius: 10px !important;
+  margin-bottom: 10px !important;
+  margin-left: 6px !important;
+  max-width: 65% !important;
+}
+
+ytd-thumbnail-overlay-time-status-renderer {
+  border-radius: 10px !important;
+}
+
+#container {
+  border-radius: 10px !important;
+}
+
+#items,
+.header.style-scope.ytd-playlist-panel-renderer {
+  border-radius: 10px !important;
+}
+
+/* Mix/playlist thumbnail previews */
+#thumbnail,
+#hover-overlays * {
+  border-radius: 10px !important;
+}
